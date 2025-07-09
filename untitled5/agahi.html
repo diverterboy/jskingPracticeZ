@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت آگهی رابگان </title>
+    <link rel="stylesheet" href="agahi.css">
+</head>
+<body>
+<header>
+
+        <div class="container">
+            <div class="logo" id="logo">
+                <a href="#">
+                    <img src="agahi/photos/icons8-website-undefined-96.png" alt="Error">
+                </a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="agahi.html" id="a1">صفحه اصلی</a></li>
+                    <li><a href="#" id="a2">محصولات</a></li>
+                    <li><a href="sabtAgahi.html" id="a3">ثبت آگهی</a></li>
+                    <li><a href="login.html" id="a4">ورود/ثبت نام</a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+</header>
+
+<div id="search">
+    <section id="hero">
+        <input type="text" placeholder="جستجو در آگهی ها">
+
+        <button id="button_search">جستجو</button>
+    </section>
+
+    <label for="place">:</label>
+    <select id="place" name="place" required>
+        <option value="">انتخاب کنید</option>
+        <option value="tehran">تهران</option>
+        <option value="karaj">کرج</option>
+        <option value="mazandaran">مازندران</option>
+        <option value="azarnaijan-sharghi">آذربایجان شرقی</option>
+        <option value="esfahan">اصفهان</option>
+        <option value="khorasan-razavi">خراسان رضوی</option>
+
+
+    </select>
+
+</div>
+
+
+
+<main>
+    <div class="container">
+
+        <section id="ads">
+            <h2>آخرین آگهی‌ها</h2>
+            <div class="ad-list">
+                <div class="ad-item">
+                    <h3 id="showTitle">عنوان آگهی 1</h3>
+                    <p id="desc">توضیحات مختصر آگهی 1</p>
+                    <p id="price">قیمت : </p>
+                    <a href="showAgahi.html">مشاهده آگهی</a>
+                </div>
+                <div class="ad-item">
+                    <h3>عنوان آگهی 2</h3>
+                    <p>توضیحات مختصر آگهی 2</p>
+                    <p class="user">توسط: کاربر 2</p>
+                    <a href="#">مشاهده آگهی</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p id="p">&copy; 2025 نیازپز </p>
+    </div>
+</footer>
+<script src="agahi.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+body {
+    font-family: 'Iran Sans', Tahoma, sans-serif; /* فونت مناسب فارسی */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    text-align: right;
+}
+
+.back-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+main.ad-details {
+    padding: 20px;
+}
+
+.ad-header {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.ad-title {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.ad-meta {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.ad-meta span {
+    margin-left: 15px;
+}
+
+.ad-meta span:last-child {
+    margin-left: 0;
+}
+
+.ad-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.main-image img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.thumbnails img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #eee;
+}
+
+.thumbnails img:hover {
+    border-color: #ccc;
+}
+
+.ad-description {
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.ad-description h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.ad-description ul {
+    padding-right: 20px;
+    list-style-type: disc;
+}
+
+.seller-info {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.seller-info h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.seller-details span {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.contact-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}
+
+.related-ads {
+    margin-bottom: 30px;
+}
+
+.related-ads h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #444;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.related-ads-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.related-ad-item {
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: right;
+}
+
+.related-ad-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.related-ad-item h3 {
+    font-size: 1rem;
+    margin: 10px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.related-ad-item span.related-ad-price {
+    display: block;
+    padding: 0 10px 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.8rem;
+}
+
+/* برای واکنشگرا کردن (اختیاری) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    .ad-gallery {
+        flex-direction: column;
+    }
+
+    .thumbnails {
+        overflow-x: scroll;
+    }
+
+    .related-ads-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}

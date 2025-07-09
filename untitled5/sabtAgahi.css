@@ -1,0 +1,61 @@
+body{
+    direction: rtl;
+    background-color: grey ;
+
+}
+
+#create-ad-form {
+    background-color: #009599;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px
+;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.serviceoption :hover {
+    font-size:666px ;
+
+
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea,
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* برای جلوگیری از افزایش عرض با padding و border */
+}
+
+.form-group textarea {
+    resize: vertical; /* اجازه تغییر ارتفاع */
+}
+
+#create-ad-form button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#create-ad-form button[type="submit"]:hover {
+    background-color: #218838;
+}

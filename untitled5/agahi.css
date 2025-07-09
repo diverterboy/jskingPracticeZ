@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    direction: rtl; /* راست به چپ برای فارسی */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    top: 0;
+    position: sticky;
+    background-color: cadetblue;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px 0;
+}
+
+#hero {
+    position: absolute;
+    padding: 70px;
+    text-align: center;
+    margin-top: 95px;
+    margin-left: 120px;
+    border-radius: 5px;
+    top: 20px;
+    right: 10px;
+}
+
+#hero h2 {
+    margin-top: 0;
+}
+
+#hero input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    margin-right: 40px;
+    width: 260px;
+}
+
+#hero button {
+    padding: 10px 20px;
+    background-color: mediumaquamarine;
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    height: 38px;
+    width: 100px;
+}
+
+#products h2, #ads h2 {
+    margin-bottom: 15px;
+}
+
+.product-list, .ad-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-item, .ad-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-item h3, .ad-item h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.product-item .price {
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-item button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ad-item .user {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.ad-item a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #6c757d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#add-ad-button {
+    margin-left: 1020px;
+    margin-top: 45px;
+    background-color: #28a745; /* سبز رنگ */
+    color: #fff;
+    border-radius: 50%; /* دایره‌ای شدن */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute; /* برای قرارگیری در موقعیت دلخواه */
+    top: 15px; /* تنظیم موقعیت عمودی */
+    left: 20px; /* تنظیم موقعیت افقی (سمت چپ) */
+    z-index: 10; /* برای اینکه روی بقیه عناصر قرار بگیره */
+}
+
+#add-ad-button a {
+    color: #fff;
+    text-decoration: none;
+    display: block; /* کل دایره قابل کلیک بشه */
+    width: 100%;
+    height: 100%;
+    line-height: 40px; /* برای وسط قرار گرفتن عمودی متن */
+    text-align: center;
+}
+
+/* می‌تونی استایل‌های واکنش‌گرا هم اضافه کنی تا در اندازه‌های مختلف صفحه بهتر نمایش داده بشه */
+@media (max-width: 768px) {
+    #add-ad-button {
+        top: 10px;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.logo{
+
+    margin-right: 500px;
+}
+
+
+#a1:hover{
+    background-color:   mediumaquamarine;
+    border-radius: 20px;
+    padding: 12px 20px;
+    transition: 0.49s;
+
+
+
+}
+
+#a2:hover{
+    background-color:   mediumaquamarine;
+    border-radius: 20px;
+    padding: 12px 20px;
+    transition: 0.49s;
+
+
+}
+
+
+
+
+
+#a3{
+    margin-left: 18px;
+
+}
+
+#a3:hover{
+
+    background-color:   mediumaquamarine;
+    border-radius: 20px;
+    padding: 12px 20px;
+    transition: 0.49s;
+
+}
+
+
+#a4:hover{
+    background-color:   mediumaquamarine;
+    border-radius: 20px;
+    padding: 12px 20px;
+    transition: 0.49s;
+
+
+}
+
+#p{
+    font-family: "JetBrains Mono ExtraBold";
+
+}
+
+
+
+
+#search{
+    background-color: grey;
+    height: 90px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+
+}
+
+#place{
+    margin-top: 22px;
+    margin-right: 480px;
+    width: 230px;
+    border-radius: 18px;
+    height: 40px;
+
+
+
+}
+
+#button_search{
+    margin-right: 400px;
+
+
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ورود/ثبت نام</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<header>
+
+    <div class="container">
+        <div class="logo" id="logo">
+            <a href="#">
+                <img src="agahi/photos/icons8-website-undefined-96.png" alt="Error">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="agahi.html" id="a1">صفحه اصلی</a></li>
+                <li><a href="#" id="a2">محصولات</a></li>
+                <li><a href="sabtAgahi.html" id="a3">ثبت آگهی</a></li>
+                <li><a href="login.html" id="a4">ورود/ثبت نام</a></li>
+            </ul>
+
+            <section id="hero">
+                <input type="text" placeholder="جستجو در محصولات...">
+                <button>جستجو</button>
+            </section>
+
+        </nav>
+    </div>
+</header>
+
+<div class="login-page">
+    <div class="form">
+        <form class="register-form">
+            <input type="text" placeholder="name"/>
+            <input type="password" placeholder="password"/>
+            <input type="text" placeholder="email address"/>
+            <button>create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+        </form>
+        <form class="login-form">
+            <input  type="text" placeholder="نام کاربری" id="user"/>
+            <input type="password" placeholder="رمز عبور" id="pass"/>
+            <button id="signUp">ورود</button>
+            <p class="message">Not registered? <a href="#">Create an account</a></p>
+        </form>
+    </div>
+</div>
+<script type="module" src="login.js"></script>
+</body>
+</html>
